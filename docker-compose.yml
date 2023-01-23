@@ -1,0 +1,28 @@
+version: '3.8'
+
+name: deile_server_forge
+
+services:
+  dynmap_mysql:
+    image: mysql:8.0.32
+    container_name: dynmap-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: dynmap
+      MYSQL_USER: dynmap
+      MYSQL_PASSWORD: dynmap
+      TZ: Asia/Tokyo
+    ports:
+      - 3306:3306
+      - 33060:33060
+    volumes:
+      - type: bind
+        source: /home/keita/data/mysql/my.cnf
+        target: /etc/mysql/conf.d/my.cnf
+      - type: volume
+        source: mysql
+        target: /var/lib/mysql
+
+volumes:
+  mysql:
+    name: mysql

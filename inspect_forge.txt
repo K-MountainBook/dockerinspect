@@ -1,0 +1,322 @@
+[
+    {
+        "Id": "38d4d1dfa51838779e2374d3b23975e963f250e684c4274256cfecabf25de622",
+        "Created": "2023-01-19T04:56:50.820814012Z",
+        "Path": "/start",
+        "Args": [],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2434,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2023-01-21T00:37:07.993965055Z",
+            "FinishedAt": "2023-01-21T00:24:06.504849893Z",
+            "Health": {
+                "Status": "unhealthy",
+                "FailingStreak": 39058,
+                "Log": [
+                    {
+                        "Start": "2023-01-23T08:07:36.996180218Z",
+                        "End": "2023-01-23T08:07:37.097251593Z",
+                        "ExitCode": 1,
+                        "Output": "failed to ping localhost:25565 : could not connect to Minecraft server: dial tcp 127.0.0.1:25565: connect: connection refused"
+                    },
+                    {
+                        "Start": "2023-01-23T08:07:42.106307406Z",
+                        "End": "2023-01-23T08:07:42.210273042Z",
+                        "ExitCode": 1,
+                        "Output": "failed to ping localhost:25565 : could not connect to Minecraft server: dial tcp 127.0.0.1:25565: connect: connection refused"
+                    },
+                    {
+                        "Start": "2023-01-23T08:07:47.225448281Z",
+                        "End": "2023-01-23T08:07:47.310170155Z",
+                        "ExitCode": 1,
+                        "Output": "failed to ping localhost:25565 : could not connect to Minecraft server: dial tcp 127.0.0.1:25565: connect: connection refused"
+                    },
+                    {
+                        "Start": "2023-01-23T08:07:52.323265674Z",
+                        "End": "2023-01-23T08:07:52.401475233Z",
+                        "ExitCode": 1,
+                        "Output": "failed to ping localhost:25565 : could not connect to Minecraft server: dial tcp 127.0.0.1:25565: connect: connection refused"
+                    },
+                    {
+                        "Start": "2023-01-23T08:07:57.414741612Z",
+                        "End": "2023-01-23T08:07:57.5213654Z",
+                        "ExitCode": 1,
+                        "Output": "failed to ping localhost:25565 : could not connect to Minecraft server: dial tcp 127.0.0.1:25565: connect: connection refused"
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:21430289858c0c8fc0a1ed0fd6204b2ecab7f1383ab63d6989b55b787b84ae99",
+        "ResolvConfPath": "/home/keita/data/work/docker/docker/containers/38d4d1dfa51838779e2374d3b23975e963f250e684c4274256cfecabf25de622/resolv.conf",
+        "HostnamePath": "/home/keita/data/work/docker/docker/containers/38d4d1dfa51838779e2374d3b23975e963f250e684c4274256cfecabf25de622/hostname",
+        "HostsPath": "/home/keita/data/work/docker/docker/containers/38d4d1dfa51838779e2374d3b23975e963f250e684c4274256cfecabf25de622/hosts",
+        "LogPath": "/home/keita/data/work/docker/docker/containers/38d4d1dfa51838779e2374d3b23975e963f250e684c4274256cfecabf25de622/38d4d1dfa51838779e2374d3b23975e963f250e684c4274256cfecabf25de622-json.log",
+        "Name": "/forge",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/keita/data/minecraft/forge:/data"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "forge_network",
+            "PortBindings": {
+                "21143/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "21143"
+                    }
+                ],
+                "8123/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8123"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/home/keita/data/work/docker/docker/overlay2/0e9eeea9c1bc3c6e8a6450616470481d6a46ef959ccb80f50f80b42c355cf4de-init/diff:/home/keita/data/work/docker/docker/overlay2/53b20ef678b718c386baae506f5e87a3516fa9a3abea6600b3ea6ec38a2d6235/diff:/home/keita/data/work/docker/docker/overlay2/8d26b8aee3b64e58fea09e0775170ac8ecd44fe95c78d8717cbab6f4449dc9ad/diff:/home/keita/data/work/docker/docker/overlay2/6aad3b64ecb8ff16fc5954f3201d9fa4faa5b6afc98ca7549da489aef3250581/diff:/home/keita/data/work/docker/docker/overlay2/3ac1b1e47ee75a2a5cff096cfc6c80c7b41c5ca04f1d7f8518ce69a113655869/diff:/home/keita/data/work/docker/docker/overlay2/6e749f24ffa5db02b37ed6b4edcec3ae22023ed014c8e9620f999ac0cf411934/diff:/home/keita/data/work/docker/docker/overlay2/619c05d03fce20b9b399b99ad26142816f18145a4bdd8c8c5a45d5e4a190da13/diff:/home/keita/data/work/docker/docker/overlay2/4f6879d8e3a955a79109541d71a42c6347122a70f9f6b4ffd3ac4ff8dd2a4eb3/diff:/home/keita/data/work/docker/docker/overlay2/de70cdefc6430ae959ae52430571bdf84e74df6bc60aced77e8be47507f256f6/diff:/home/keita/data/work/docker/docker/overlay2/0aef1192c601d921f20c2c5783f6b62fbd884269b22fc35af8bc3adcc01b5731/diff:/home/keita/data/work/docker/docker/overlay2/6342ca37df7faecc29fc2b6a070a563be4a2f33e914920da6a727c3277bf6974/diff:/home/keita/data/work/docker/docker/overlay2/e3ec929b0d750b2a031debaa10e5043591236a696b55d4b9ea5b00449a75bf20/diff:/home/keita/data/work/docker/docker/overlay2/5997c0ed09cfb54ce225c6e72204a9a767b8816bee99d698616c4b34e27fc6d3/diff:/home/keita/data/work/docker/docker/overlay2/ebe3416ded5f5f7c321b0752a05f643f601660cc85437007fd0dd0365fdc0fb6/diff:/home/keita/data/work/docker/docker/overlay2/50a8e59f8630bdf376c8d7652c836ed5b6db12cd30e4ed80bba040c1964ab883/diff:/home/keita/data/work/docker/docker/overlay2/79bce58058e0258eac80c30ceab31649a98ec7ae2b2f6ecb95772fc4c96599db/diff:/home/keita/data/work/docker/docker/overlay2/a27a5caa23ebbee5f6fc3a93c5aa93b40edebf7041df202f789523241c2f8faa/diff:/home/keita/data/work/docker/docker/overlay2/ca52fdcf1565a463f882dfb51b975c5babace9d0b3cbd5bf0e0b5781feef4d52/diff:/home/keita/data/work/docker/docker/overlay2/7836a6478c77792bf48f4ad1cc5f690417846fff78aa6f0f8cd7f5044954f0af/diff:/home/keita/data/work/docker/docker/overlay2/9c4204574cca024ce2b77fab98e9a2c14affab7060d1e2e2e466d201f14c6801/diff:/home/keita/data/work/docker/docker/overlay2/c0167fa58e885340030fa961c87ffdeab4c56047cca2acdf05cf9b13e13aeb74/diff:/home/keita/data/work/docker/docker/overlay2/b0cf2b6db5f5459cb9695224b323c25257818b8ca599761bfb5653437056bbed/diff:/home/keita/data/work/docker/docker/overlay2/ba3b21e23958d2967c3859a1432c4bb4a89e0562ecdc30995c607bf6c870a27d/diff:/home/keita/data/work/docker/docker/overlay2/f9018200cde6c1df7029f95c320a9be1fcf7f8db3478d0ee1fbdb9e2eac99a5c/diff",
+                "MergedDir": "/home/keita/data/work/docker/docker/overlay2/0e9eeea9c1bc3c6e8a6450616470481d6a46ef959ccb80f50f80b42c355cf4de/merged",
+                "UpperDir": "/home/keita/data/work/docker/docker/overlay2/0e9eeea9c1bc3c6e8a6450616470481d6a46ef959ccb80f50f80b42c355cf4de/diff",
+                "WorkDir": "/home/keita/data/work/docker/docker/overlay2/0e9eeea9c1bc3c6e8a6450616470481d6a46ef959ccb80f50f80b42c355cf4de/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/keita/data/minecraft/forge",
+                "Destination": "/data",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "38d4d1dfa518",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "21143/tcp": {},
+                "25565/tcp": {},
+                "25575/tcp": {},
+                "8123/tcp": {}
+            },
+            "Tty": true,
+            "OpenStdin": true,
+            "StdinOnce": false,
+            "Env": [
+                "TYPE=FORGE",
+                "VERSION=1.19.3",
+                "MEMORY=8G",
+                "TZ=Asia/Tokyo",
+                "EULA=TRUE",
+                "PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "JAVA_HOME=/opt/java/openjdk",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US:en",
+                "LC_ALL=en_US.UTF-8",
+                "JAVA_VERSION=jdk-17.0.5+8",
+                "UID=1000",
+                "GID=1000",
+                "RCON_PASSWORD=minecraft"
+            ],
+            "Cmd": null,
+            "Healthcheck": {
+                "Test": [
+                    "CMD-SHELL",
+                    "mc-health"
+                ],
+                "Interval": 5000000000,
+                "StartPeriod": 60000000000,
+                "Retries": 24
+            },
+            "Image": "itzg/minecraft-server",
+            "Volumes": {
+                "/data": {}
+            },
+            "WorkingDir": "/data",
+            "Entrypoint": [
+                "/start"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "org.opencontainers.image.authors": "Geoff Bourne <itzgeoff@gmail.com>",
+                "org.opencontainers.image.created": "2023-01-14T21:17:30.402Z",
+                "org.opencontainers.image.description": "Docker image that provides a Minecraft Server that will automatically download selected version at startup",
+                "org.opencontainers.image.licenses": "Apache-2.0",
+                "org.opencontainers.image.revision": "3f23c67098d10e80efb03366ef995d7dbab71a57",
+                "org.opencontainers.image.source": "https://github.com/itzg/docker-minecraft-server",
+                "org.opencontainers.image.title": "docker-minecraft-server",
+                "org.opencontainers.image.url": "https://github.com/itzg/docker-minecraft-server",
+                "org.opencontainers.image.version": "java17"
+            },
+            "StopSignal": "SIGTERM"
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "ee1ef3e71780ff8e19b9bff0c3a5b001365c43c0de6e153df2b4d8f38d5b845b",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "21143/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "21143"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "21143"
+                    }
+                ],
+                "25565/tcp": null,
+                "25575/tcp": null,
+                "8123/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "8123"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "8123"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/ee1ef3e71780",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "forge_network": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "38d4d1dfa518"
+                    ],
+                    "NetworkID": "6f425b67a4bf666c0130add5377badea8d038a3bf93636037f43b9ed2d95e27b",
+                    "EndpointID": "6572f52e3321d563f94c6e4b5a9aa2626da42dc9d7c8ab20bd3b64876dab66aa",
+                    "Gateway": "192.168.100.254",
+                    "IPAddress": "192.168.100.2",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:c0:a8:64:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]

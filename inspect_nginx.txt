@@ -1,0 +1,304 @@
+[
+    {
+        "Id": "6c4d14d9f0c4835f1a77bcb5522f8b6df8520426a2f96dd8902ec3dd704abf76",
+        "Created": "2023-01-15T06:49:32.948601623Z",
+        "Path": "/docker-entrypoint.sh",
+        "Args": [
+            "nginx",
+            "-g",
+            "daemon off;"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 3617,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2023-01-21T00:38:58.521138792Z",
+            "FinishedAt": "2023-01-21T00:37:03.554981621Z"
+        },
+        "Image": "sha256:a99a39d070bfd1cb60fe65c45dea3a33764dc00a9546bf8dc46cb5a11b1b50e9",
+        "ResolvConfPath": "/home/keita/data/work/docker/docker/containers/6c4d14d9f0c4835f1a77bcb5522f8b6df8520426a2f96dd8902ec3dd704abf76/resolv.conf",
+        "HostnamePath": "/home/keita/data/work/docker/docker/containers/6c4d14d9f0c4835f1a77bcb5522f8b6df8520426a2f96dd8902ec3dd704abf76/hostname",
+        "HostsPath": "/home/keita/data/work/docker/docker/containers/6c4d14d9f0c4835f1a77bcb5522f8b6df8520426a2f96dd8902ec3dd704abf76/hosts",
+        "LogPath": "/home/keita/data/work/docker/docker/containers/6c4d14d9f0c4835f1a77bcb5522f8b6df8520426a2f96dd8902ec3dd704abf76/6c4d14d9f0c4835f1a77bcb5522f8b6df8520426a2f96dd8902ec3dd704abf76-json.log",
+        "Name": "/nginx-proxy",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/keita/data/nginx/conf.d:/etc/nginx/conf.d",
+                "/home/keita/data/nginx/log:/var/log/nginx",
+                "/home/keita/data/nginx/html:/usr/share/nginx/html",
+                "/home/keita/data/cron/etc/letsencrypt:/etc/letsencrypt"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {
+                "443/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "443"
+                    }
+                ],
+                "80/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "80"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/home/keita/data/work/docker/docker/overlay2/6ca7e9202fc685c689fb261a35f98e0ed3c158833580f3792d93022635858e6c-init/diff:/home/keita/data/work/docker/docker/overlay2/46fac2a4e8acefb89b4c9abaed7916b537b26b8d97efcb805d7289f451829ee2/diff:/home/keita/data/work/docker/docker/overlay2/a3981307796909ecf9910e3fc24a8ff251d0469ce16af11609074a7b15ee4c3e/diff:/home/keita/data/work/docker/docker/overlay2/f0aee55de374e54b54e7eea0a8a47b8835206dc351323ddfcee0d5bd5129a1ce/diff:/home/keita/data/work/docker/docker/overlay2/9b01f11061f1d70c1611381343f1267a10948322b830719d2b2e123d608fd246/diff:/home/keita/data/work/docker/docker/overlay2/74b60f988c6232f5e71f3e038d62fbaa9059a02990efff8631178fd52c7ca9c0/diff:/home/keita/data/work/docker/docker/overlay2/57971b81deb28e4aaa92e2a94b29d397dab25fd1d549b0b9eabd348d5088b164/diff",
+                "MergedDir": "/home/keita/data/work/docker/docker/overlay2/6ca7e9202fc685c689fb261a35f98e0ed3c158833580f3792d93022635858e6c/merged",
+                "UpperDir": "/home/keita/data/work/docker/docker/overlay2/6ca7e9202fc685c689fb261a35f98e0ed3c158833580f3792d93022635858e6c/diff",
+                "WorkDir": "/home/keita/data/work/docker/docker/overlay2/6ca7e9202fc685c689fb261a35f98e0ed3c158833580f3792d93022635858e6c/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/keita/data/cron/etc/letsencrypt",
+                "Destination": "/etc/letsencrypt",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/keita/data/nginx/conf.d",
+                "Destination": "/etc/nginx/conf.d",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/keita/data/nginx/html",
+                "Destination": "/usr/share/nginx/html",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "/home/keita/data/nginx/log",
+                "Destination": "/var/log/nginx",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "6c4d14d9f0c4",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "443/tcp": {},
+                "80/tcp": {}
+            },
+            "Tty": true,
+            "OpenStdin": true,
+            "StdinOnce": false,
+            "Env": [
+                "TZ=Asia/Tokyo",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.23.3",
+                "NJS_VERSION=0.7.9",
+                "PKG_RELEASE=1~bullseye"
+            ],
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "Image": "nginx",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "4cf3d5460ec071fbe3a7702fb2e486ec4dff00f4fc8acf8b071c0e45d771ef5b",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "443/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "443"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "443"
+                    }
+                ],
+                "80/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "80"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "80"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/4cf3d5460ec0",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "b89b63a0bd98cfa8ade86ed33b3e9f5117d5ed5b6c825a63468f4171ef0134e6",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.3",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:03",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "fcfcfa7c7df7d954bde1253e9b2e2815f9e35b7958e76005cc95d74c0005e423",
+                    "EndpointID": "b89b63a0bd98cfa8ade86ed33b3e9f5117d5ed5b6c825a63468f4171ef0134e6",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:03",
+                    "DriverOpts": null
+                },
+                "forge_network": {
+                    "IPAMConfig": {},
+                    "Links": null,
+                    "Aliases": [
+                        "6c4d14d9f0c4"
+                    ],
+                    "NetworkID": "6f425b67a4bf666c0130add5377badea8d038a3bf93636037f43b9ed2d95e27b",
+                    "EndpointID": "d99b8230c0f4d4ef27e952cbfd01be506a410c657cac7827939abedc54eea0fa",
+                    "Gateway": "192.168.100.254",
+                    "IPAddress": "192.168.100.3",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:c0:a8:64:03",
+                    "DriverOpts": {}
+                }
+            }
+        }
+    }
+]
