@@ -17,11 +17,13 @@ services:
       # - 33060:33060
     volumes:
       - type: bind
-        source: /home/keita/data/mysql/my.cnf
-        target: /etc/mysql/conf.d/my.cnf
+        source: /home/keita/data/mysql/
+        target: /etc/mysql/conf.d/
       - type: volume
         source: mysql
         target: /var/lib/mysql
+    networks:
+      - forge_network
 
   forge:
     image: itzg/minecraft-server
@@ -43,8 +45,10 @@ services:
       # - 8123:8123
     volumes:
       - type: bind
-        source: /home/keita/data/minecraft/forge
-        target: /data
+        source: /home/keita/data/minecraft/forge/
+        target: /data/
+    networks:
+      - forge_network
 
   nginx:
     image: nginx:latest
@@ -59,18 +63,30 @@ services:
       - 443:443
     volumes:
       - type: bind
-        source: /home/keita/data/cron/etc/letsencrypt
-        target: /etc/letsencrypt
+        source: /home/keita/data/cron/etc/letsencrypt/
+        target: /etc/letsencrypt/
       - type: bind
-        source: /home/keita/data/nginx/conf.d
-        target: /etc/nginx/conf.d
+        source: /home/keita/data/nginx/conf.d/
+        target: /etc/nginx/conf.d/
       - type: bind
-        source: /home/keita/data/nginx/html
-        target: /usr/share/nginx/html
+        source: /home/keita/data/nginx/html/
+        target: /usr/share/nginx/html/
       - type: bind
-        source: /home/keita/data/nginx/log
-        target: /var/log/nginx"
+        source: /home/keita/data/nginx/log/
+        target: /var/log/nginx/"
+    networks:
+      - forge_network
 
 volumes:
   mysql:
     name: mysql
+
+networks:
+  forge_network:
+    name: forge_network
+    driver: bridge
+    ipam: 
+      driver: default
+      config:
+        - subnet: 192.168.100.0/24
+
