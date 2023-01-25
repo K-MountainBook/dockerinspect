@@ -1,0 +1,52 @@
+[
+    {
+        "Name": "forge_network",
+        "Id": "6f425b67a4bf666c0130add5377badea8d038a3bf93636037f43b9ed2d95e27b",
+        "Created": "2023-01-15T03:00:41.298430111Z",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "192.168.100.0/24",
+                    "Gateway": "192.168.100.254"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "38d4d1dfa51838779e2374d3b23975e963f250e684c4274256cfecabf25de622": {
+                "Name": "forge",
+                "EndpointID": "6572f52e3321d563f94c6e4b5a9aa2626da42dc9d7c8ab20bd3b64876dab66aa",
+                "MacAddress": "02:42:c0:a8:64:02",
+                "IPv4Address": "192.168.100.2/24",
+                "IPv6Address": ""
+            },
+            "6c4d14d9f0c4835f1a77bcb5522f8b6df8520426a2f96dd8902ec3dd704abf76": {
+                "Name": "nginx-proxy",
+                "EndpointID": "d99b8230c0f4d4ef27e952cbfd01be506a410c657cac7827939abedc54eea0fa",
+                "MacAddress": "02:42:c0:a8:64:03",
+                "IPv4Address": "192.168.100.3/24",
+                "IPv6Address": ""
+            },
+            "740308ba9cd7bb45697b8651672ad84aef0e0681a36f7f7d9f5ca7b4a66d9003": {
+                "Name": "dynmap_mysql",
+                "EndpointID": "92194c516bd48f5b498ddc42c0dd399eae4b32e89e2dee0152b282fa83d5202d",
+                "MacAddress": "02:42:c0:a8:64:01",
+                "IPv4Address": "192.168.100.1/24",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {}
+    }
+]
