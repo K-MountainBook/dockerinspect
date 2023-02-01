@@ -38,9 +38,9 @@ services:
       LANGUAGE: ja_JP.UTF-8
       LC_ALL: ja_JP.UTF-8
       RCON_PASSWORD: minecraft
-      # ports:
-      # - 21143:21143
-      # - 25565:25565
+    ports:
+      - 21143:21143
+      - 25565:25565
       # - 25575:25575
       # - 8123:8123
     volumes:
