@@ -34,9 +34,6 @@ services:
       MEMORY: 8G
       TZ: Asia/Tokyo
       EULA: TRUE
-      LANG: ja_JP.UTF-8
-      LANGUAGE: ja_JP.UTF-8
-      LC_ALL: ja_JP.UTF-8
       RCON_PASSWORD: minecraft
     ports:
       - 21143:21143
