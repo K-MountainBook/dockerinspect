@@ -1,7 +1,5 @@
 version: '3.8'
 
-name: deile_server_forge
-
 services:
   dynmap_mysql:
     image: mysql:8.0.32
@@ -33,7 +31,7 @@ services:
       VERSION: 1.19.3
       MEMORY: 8G
       TZ: Asia/Tokyo
-      EULA: TRUE
+      EULA: "TRUE"
       LANG: ja_JP.UTF-8
       LANGUAGE: ja_JP.UTF-8
       LC_ALL: ja_JP.UTF-8
