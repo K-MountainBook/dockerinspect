@@ -33,7 +33,7 @@ services:
       VERSION: 1.19.3
       MEMORY: 8G
       TZ: Asia/Tokyo
-      EULA: TRUE
+      EULA: "TRUE"
       RCON_PASSWORD: minecraft
     ports:
       - 21143:21143
@@ -73,6 +73,18 @@ services:
         target: /var/log/nginx/"
     networks:
       - forge_network
+
+  certbot:
+    image: certbot/certbot:latest
+    container_name: certbot
+    volumes:
+      - type: bind
+        source: /home/keita/data/cron/etc/letsencrypt/
+        target: /etc/letsencrypt/
+      - type: bind
+        source: /home/keita/data/nginx/html/
+        target: /var/www/html/
+
 
 volumes:
   mysql:
